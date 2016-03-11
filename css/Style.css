@@ -1,0 +1,162 @@
+body {
+  background-color: #f9f9f9;
+  width: 1366px;
+}
+
+#wrapper {
+  width: 1060px;
+  height: auto;
+  background-color: #ffffff;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  -webkit-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.56);
+  -moz-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.56);
+  box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.56);
+}
+
+.box-logo {
+  margin-left: 46px;
+}
+
+header {
+background: #5e5e5e url(img/panel-gradient.png) repeat-x; /*Не работает градиент, не могу понять в чем проблема. впринципе, любое изображени хочет быть бэкграундом*/
+display: block;
+width: auto;
+height: 40px;
+margin-top: 40px;
+margin-left: 46px;
+margin-right: 46px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.menu-top {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: inherit;
+  height: 40px;
+}
+
+.top-bar {
+display: table-cell;
+vertical-align: middle;
+width: 8em;
+height: 30px;
+margin-right: 10px;
+padding: 5px;
+text-decoration: none;
+font-size: 17px;
+color: #ffffff;
+font-family: sans-serif;
+text-align: center;
+border-right: 1px #5e5e5e solid;
+border-left: 1px #5e5e5e solid;  /*Не нашел как лучше сделать, чтоб не дергалось при наведении с использованием hover*/
+text-shadow: 1px 1px 2px black, 0 0;
+}
+
+.bottom-bar:hover {
+  text-decoration: underline;
+}
+
+.top-bar:hover {
+  background-color: #353535;
+  border-left: 1px #838383 solid;
+  border-right: 1px #838383 solid;
+  height: 30px;
+}
+
+.sidebar:hover {
+color: #2c2c2c;
+background-color: #f9f9f9;
+text-indent: 25px;
+}
+
+.side_menu {
+float: left;
+margin-top: 24px;
+margin-left: 46px;
+margin-right: 46px;
+}
+
+.sidebar {
+width: 200px;
+font-size: 16px;
+padding: 5px;
+font-weight: normal;
+color: #5e5e5e;
+font-family: sans-serif;
+border-top: 1px #5e5e5e solid;
+border-left: 1px #5e5e5e solid;
+border-right: 1px #5e5e5e solid;
+line-height: 40px;
+vertical-align: middle;
+}
+
+.sidebar:last-child { /*Есть ли более удобный способ сделать так, чтоб границы элеметов в этой таблице не накладывались друг на друга (top и bottom образуют общую границу в 2px)*/
+border-bottom: 1px #5e5e5e solid;
+}
+
+.content {
+  width: 655px;
+  height: 400px;
+  margin-right: 46px;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 1px #5e5e5e solid;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img {  /*Опять же не нашел нормального способа отцентровать изображение, ну и так как пиксельная точность пока не требуется - сделал размер %*/
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.article {
+  width: 655px;
+  margin-right: 46px;
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: normal;
+  color: #5e5e5e;
+  font-family: sans-serif;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+footer {
+width: auto;
+background-color: #e1e1e1;
+margin-left: 46px;
+margin-right: 46px;
+}
+
+.bottom-bar {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+width: 8em;
+height: 40px;
+font-size: 16px;
+font-weight: bold;
+margin-right: 10px;
+padding: 5px;
+color: #5e5e5e;
+font-family: sans-serif;
+}
+
+.bottom-bar:last-child { /*Так понимаю, что это нужно сделать было по-другому, но способа не нашел и похоже сейчас помру от усталости*/
+width: 24em;
+text-align: right;
+}
